@@ -1,0 +1,46 @@
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table tr th {
+    background-color: black;
+    color: white;
+}
+
+table tr td {
+    padding: 10px;
+    border: 1px solid gray;
+}
+
+table tr td img {
+    border-radius: 20px;
+}
+
+table tr td.link {
+    text-align: center;
+}
+
+table tr.soul td {
+    background-color: rgb(255, 194, 81);
+}
+
+table tr.time td {
+    background-color: rgb(58, 212, 58);
+}
+
+table tr.space td {
+    background-color: rgb(124, 124, 252);
+}
+
+table tr.mind td {
+    background-color: rgb(255, 255, 35);
+}
+
+table tr.reality td {
+    background-color: rgb(247, 115, 115);
+}
+
+table tr.power td {
+    background-color: rgb(177, 90, 248);
+}

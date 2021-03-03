@@ -1,0 +1,17 @@
+body {
+    font-family: 'Verdana';
+}
+
+form {
+    border: 2px solid rgb(160, 160, 160);
+    padding: 20px;
+}
+
+form, form fieldset {
+    border: 1px solid rgb(160, 160, 160);
+    border-radius: 10px;
+}
+
+form fieldset * {
+    margin: 2.5px;
+}

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Superhero Form</title>
+    <link href="style.css" rel="stylesheet">
+    
+</head>
+
+<body>
+    <h1>Superhero Form</h1>
+
+    <form>
+        <fieldset>
+            <legend>About the Superhero</legend>
+
+            <label for="real-name">Real Name</label>
+            <input id="real-name" placeholder="Alan Scott" autofocus>
+
+            <label for="name">Superhero Name</label>
+            <input id="name" placeholder="Green Lantern">
+
+            <label for="age">Age</label>
+            <input id="age" placeholder="23" type="number" min="1" max="999" step="1">
+
+            <br>
+
+            <label for="about">About</label>
+            <textarea id="about" rows="5" cols="70" maxlength="500"
+                placeholder="Green Lantern is the name of several heroes in American Comic books published by DC Comics. Using the aid of rings, they fight evil, granting them a number of incredible powers, many of which come from imagination and/or emotions. The characters are usually portrayed as members of an interstellar law enforcement agency, the Green Lantern Corps. The first Green Lantern character, Alan Scott, was created by Martin Nodell in 1940 during the Golden Age of Comic Books, and usually fought common criminals in Capitol City using his magic ring. In 1959 for the Golden Age of Comic Books John Broome and Gil Kane reinvented the character as Hal Jordan and shifted Green Lantern storeys from fantasy to science fiction. Some notable Green Lanterns include, among others, Guy Gardner, John Stewart, Kyle Rayner."></textarea>
+
+            <br>
+
+            <label for="photo">Photo</label>
+            <input id="photo" type="file">
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+            <legend>Powers</legend>
+
+            <label for="powers">Powers</label>
+
+            <input type="checkbox" id="telekinesis">
+            <label for="telekinesis" name="powers">Telekinesis</label>
+
+            <input type="checkbox" id="shapeshifting">
+            <label for="shapeshifting" name="powers">Shapeshifting</label>
+
+            <input type="checkbox" id="flight">
+            <label for="flight" name="powers">Flight</label>
+
+            <input type="checkbox" id="elemental-control">
+            <label for="elemental-control" name="powers">Elemental control</label>
+
+            <input type="checkbox" id="other-power">
+            <label for="other-power" name="powers">Other</label>
+
+            <br>
+
+            <label for="level-control">Level of control</label>
+            <input type="range" id="level-control" min="0" max="10" value="1">
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+            <legend>Origin of Powers</legend>
+
+            <input type="radio" id="unknown" name="origin-of-powers">
+            <label for="unknown">Unknown</label>
+
+            <input type="radio" id="freak-lab-accident" name="origin-of-powers">
+            <label for="freak-lab-accident">Freak lab accident</label>
+
+            <input type="radio" id="chosen-by-an-ancient-wise-being" name="origin-of-powers">
+            <label for="chosen-by-an-ancient-wise-being">Chosen by an ancient wise being</label>
+
+            <input type="radio" id="the-superhero-is-not-human" name="origin-of-powers">
+            <label for="the-superhero-is-not-human">The superhero is not human</label>
+
+            <input type="radio" id="other-origin" name="origin-of-powers">
+            <label for="other-origin">Other</label>
+        </fieldset>
+
+        <br>
+
+        <input type="reset" value="CLEAR">
+        <input type="submit" value="SEND">
+    </form>
+</body>
+
+</html>

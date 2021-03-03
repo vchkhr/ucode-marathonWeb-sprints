@@ -1,0 +1,33 @@
+div.weather {
+    display: flex;
+}
+
+div.day {
+    padding: 5px;
+    border: 1px solid rgba(0, 0, 0, 0);
+}
+
+div.day:hover {
+    border: 1px solid gray;
+    box-shadow: 0px 0px 10px gray;
+}
+
+div.day, div.forecast img {
+    width: 100px;
+}
+
+div.temperature p {
+    font-family: "Lato";
+    font-weight: 400;
+    text-align: center;
+    font-size: 2em;
+}
+
+div.date p {
+    font-family: "Lato";
+    font-weight: 700;
+    text-align: center;
+    font-size: 1.5em;
+    background-color: darkblue;
+    color: white;
+}
