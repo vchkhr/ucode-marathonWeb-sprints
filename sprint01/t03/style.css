@@ -1,0 +1,51 @@
+h1 {
+    background: radial-gradient(circle, red, yellow);
+}
+
+div.menu {
+    display: flex;
+    justify-content: center;
+}
+
+div.menu * {
+    padding: 0;
+    margin: 0;
+}
+
+div.menu p {
+    line-height: 60px;
+}
+
+h1, div.menu p {
+    color: white;
+    font-family: "Verdana";
+    text-align: center;
+}
+
+div.level1 {
+    margin: 0px 5px;
+}
+
+div.level2, div.level3 {
+    display: none;
+}
+
+div.level1, div.level2, div.level3 {
+    width: 300px;
+    background-color: gray;
+    height: 60px;
+    text-align: center;
+}
+
+div.level1:hover, div.level2 p:hover {
+    background-color: orangered;
+}
+
+div.level1:hover div.level2,
+div.level2:hover div.level3 {
+    display: block;
+}
+
+div.level2:hover div.level3 {
+    transform: translate(100%, -100%);
+}

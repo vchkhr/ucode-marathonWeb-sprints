@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Catalog – SmartHome.UA</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="flex">
+            <h1><a href="index.html" class="invisible">💡SmartHome <span>– Smart Devices</span></a></h1>
+
+            <p><a href="#">❓About</a></p>
+    
+            <p><a href="#">🔧Service</a></p>
+    
+            <p><a href="#">💛Contact</a></p>
+
+            <input type="text" class="search" placeholder="🔍Search">
+
+            <p class="phone">☎️Phone Support:<br><a href="tel:+380991234555">+380 99 123 45 55</a></p>
+        </div>
+    </header>
+
+    <main>
+        <div class="breadcrumbs">
+            <p>You are here: 
+                <span><a href="index.html">Catalog</a></span>
+            </p>
+        </div>
+
+        <h1>📕 Catalog</h1>
+
+        <form class="filter">
+            <input type="checkbox" id="security" checked="checked">
+            <label for="security" name="filter">Security</label>
+
+            <input type="checkbox" id="environment-monitoring" checked="checked">
+            <label for="environment-monitoring" name="filter">Environmental Monitoring</label>
+
+            <input type="checkbox" id="smart-home-control" checked="checked">
+            <label for="smart-home-control" name="filter">Smart Home Control</label>
+
+            <input type="checkbox" id="power-grid-management" checked="checked">
+            <label for="power-grid-management" name="filter">Power Grid Management</label>
+
+            <input type="checkbox" id="heating-control" checked="checked">
+            <label for="heating-control" name="filter">Heating Control</label>
+        </form>
+
+        <div class="sub-filters-and-products">
+            <form class="sub-filter">
+                <fieldset class="brand">
+                    <legend>⚙️Brand</legend>
+    
+                    <input type="checkbox" id="xiaomi" checked="checked">
+                    <label for="xiaomi" name="brand">Xiaomi</label>
+                    <br>
+    
+                    <input type="checkbox" id="ajax" checked="checked">
+                    <label for="ajax" name="brand">Ajax</label>
+                    <br>
+    
+                    <input type="checkbox" id="siterwell" checked="checked">
+                    <label for="siterwell" name="brand">Siterwell</label>
+                    <br>
+                </fieldset>
+    
+                <fieldset class="max-price">
+                    <legend>💸Maximum Price</legend>
+    
+                    <input type="range" id="max-price" min="100" max="10000" step="100">
+                </fieldset>
+    
+                <fieldset class="available">
+                    <legend>🛒Available</legend>
+    
+                    <input type="checkbox" id="yes" checked="checked">
+                    <label for="yes" name="available">In Stock</label>
+                </fieldset>
+            </form>
+    
+            <div class="products">
+                <div class="product">
+                    <a href="card.html" class="invisible">
+                        <img src="assets/images/mijia-move-detector-ytc4016cn.jpg" alt="Mijia Move Detector">
+                        <h1>Mijia Move Detector</h1>
+                    </a>
+                    <div class="info">
+                        <p class="price"><span>499</span> ₴</p>
+                        <p class="stock available"><span>Available</span></p>
+                        <p><a href="card.html" class="buy">Buy</a></p>
+                        
+                    </div>
+                </div>
+
+                <div class="product">
+                    <a href="#" class="invisible">
+                        <img src="assets/images/xiaomi-mi-light-detection-sensor.jpg" alt="Xiaomi Mi Light Detection Sensor">
+                        <h1>Xiaomi Mi Light Detection Sensor</h1>
+                    </a>
+                    <div class="info">
+                        <p class="price"><span>399</span> ₴</p>
+                        <p class="stock unavailable"><span>Unavailable</span></p>
+                        <p><a href="#" class="buy">Buy</a></p>
+                    </div>
+                </div>
+
+                <div class="product">
+                    <a href="#" class="invisible">
+                        <img src="assets/images/ajax-relay.jpg" alt="Ajax Relay With Dry Contact">
+                        <h1>Ajax Relay With Dry Contact</h1>
+                    </a>
+                    <div class="info">
+                        <p class="price"><span>849</span> ₴</p>
+                        <p class="stock unavailable"><span>Unavailable</span></p>
+                        <p><a href="#" class="buy">Buy</a></p>
+                    </div>
+                </div>
+
+                <div class="product">
+                    <a href="#" class="invisible">
+                        <img src="assets/images/ajax-socket.jpg" alt="Ajax Socket">
+                        <h1>Ajax Socket</h1>
+                    </a>
+                    <div class="info">
+                        <p class="price"><span>1199</span> ₴</p>
+                        <p class="stock available"><span>Available</span></p>
+                        <p><a href="#" class="buy">Buy</a></p>
+                    </div>
+                </div>
+
+                <div class="product">
+                    <a href="#" class="invisible">
+                        <img src="assets/images/siterwell-radiator-valve-with-thermostat.jpg" alt="Siterwell Radiator Valve with Thermostat">
+                        <h1>Siterwell Radiator Valve with Thermostat</h1>
+                    </a>
+                    <div class="info">
+                        <p class="price"><span>999</span> ₴</p>
+                        <p class="stock available"><span>Available</span></p>
+                        <p><a href="#" class="buy">Buy</a></p>
+                    </div>
+                </div>
+                <div class="product">
+                    <a href="#" class="invisible">
+                        <img src="assets/images/mijia-move-detector-ytc4016cn.jpg" alt="Mijia Move Detector">
+                        <h1>Mijia Move Detector</h1>
+                    </a>
+                    <div class="info">
+                        <p class="price"><span>499</span> ₴</p>
+                        <p class="stock available"><span>Available</span></p>
+                        <p><a href="#" class="buy">Buy</a></p>
+                    </div>
+                </div>
+
+                <div class="product">
+                    <a href="#" class="invisible">
+                        <img src="assets/images/xiaomi-mi-light-detection-sensor.jpg" alt="Xiaomi Mi Light Detection Sensor">
+                        <h1>Xiaomi Mi Light Detection Sensor</h1>
+                    </a>
+                    <div class="info">
+                        <p class="price"><span>399</span> ₴</p>
+                        <p class="stock unavailable"><span>Unavailable</span></p>
+                        <p><a href="#" class="buy">Buy</a></p>
+                    </div>
+                </div>
+
+                <div class="product">
+                    <a href="#" class="invisible">
+                        <img src="assets/images/ajax-relay.jpg" alt="Ajax Relay With Dry Contact">
+                        <h1>Ajax Relay With Dry Contact</h1>
+                    </a>
+                    <div class="info">
+                        <p class="price"><span>849</span> ₴</p>
+                        <p class="stock unavailable"><span>Unavailable</span></p>
+                        <p><a href="#" class="buy">Buy</a></p>
+                    </div>
+                </div>
+
+                <div class="product">
+                    <a href="#" class="invisible">
+                        <img src="assets/images/ajax-socket.jpg" alt="Ajax Socket">
+                        <h1>Ajax Socket</h1>
+                    </a>
+                    <div class="info">
+                        <p class="price"><span>1199</span> ₴</p>
+                        <p class="stock available"><span>Available</span></p>
+                        <p><a href="#" class="buy">Buy</a></p>
+                    </div>
+                </div>
+
+                <div class="product">
+                    <a href="#" class="invisible">
+                        <img src="assets/images/siterwell-radiator-valve-with-thermostat.jpg" alt="Siterwell Radiator Valve with Thermostat">
+                        <h1>Siterwell Radiator Valve with Thermostat</h1>
+                    </a>
+                    <div class="info">
+                        <p class="price"><span>999</span> ₴</p>
+                        <p class="stock available"><span>Available</span></p>
+                        <p><a href="#" class="buy">Buy</a></p>
+                    </div>
+                </div>
+                <div class="product">
+                    <a href="#" class="invisible">
+                        <img src="assets/images/mijia-move-detector-ytc4016cn.jpg" alt="Mijia Move Detector">
+                        <h1>Mijia Move Detector</h1>
+                    </a>
+                    <div class="info">
+                        <p class="price"><span>499</span> ₴</p>
+                        <p class="stock available"><span>Available</span></p>
+                        <p><a href="#" class="buy">Buy</a></p>
+                    </div>
+                </div>
+
+                <div class="product">
+                    <a href="#" class="invisible">
+                        <img src="assets/images/xiaomi-mi-light-detection-sensor.jpg" alt="Xiaomi Mi Light Detection Sensor">
+                        <h1>Xiaomi Mi Light Detection Sensor</h1>
+                    </a>
+                    <div class="info">
+                        <p class="price"><span>399</span> ₴</p>
+                        <p class="stock unavailable"><span>Unavailable</span></p>
+                        <p><a href="#" class="buy">Buy</a></p>
+                    </div>
+                </div>
+
+                <div class="product">
+                    <a href="#" class="invisible">
+                        <img src="assets/images/ajax-relay.jpg" alt="Ajax Relay With Dry Contact">
+                        <h1>Ajax Relay With Dry Contact</h1>
+                    </a>
+                    <div class="info">
+                        <p class="price"><span>849</span> ₴</p>
+                        <p class="stock unavailable"><span>Unavailable</span></p>
+                        <p><a href="#" class="buy">Buy</a></p>
+                    </div>
+                </div>
+
+                <div class="product">
+                    <a href="#" class="invisible">
+                        <img src="assets/images/ajax-socket.jpg" alt="Ajax Socket">
+                        <h1>Ajax Socket</h1>
+                    </a>
+                    <div class="info">
+                        <p class="price"><span>1199</span> ₴</p>
+                        <p class="stock available"><span>Available</span></p>
+                        <p><a href="#" class="buy">Buy</a></p>
+                    </div>
+                </div>
+
+                <div class="product">
+                    <a href="#" class="invisible">
+                        <img src="assets/images/siterwell-radiator-valve-with-thermostat.jpg" alt="Siterwell Radiator Valve with Thermostat">
+                        <h1>Siterwell Radiator Valve with Thermostat</h1>
+                    </a>
+                    <div class="info">
+                        <p class="price"><span>999</span> ₴</p>
+                        <p class="stock available"><span>Available</span></p>
+                        <p><a href="#" class="buy">Buy</a></p>
+                    </div>
+                </div>
+                <div class="product">
+                    <a href="#" class="invisible">
+                        <img src="assets/images/mijia-move-detector-ytc4016cn.jpg" alt="Mijia Move Detector">
+                        <h1>Mijia Move Detector</h1>
+                    </a>
+                    <div class="info">
+                        <p class="price"><span>499</span> ₴</p>
+                        <p class="stock available"><span>Available</span></p>
+                        <p><a href="#" class="buy">Buy</a></p>
+                    </div>
+                </div>
+
+                <div class="product">
+                    <a href="#" class="invisible">
+                        <img src="assets/images/xiaomi-mi-light-detection-sensor.jpg" alt="Xiaomi Mi Light Detection Sensor">
+                        <h1>Xiaomi Mi Light Detection Sensor</h1>
+                    </a>
+                    <div class="info">
+                        <p class="price"><span>399</span> ₴</p>
+                        <p class="stock unavailable"><span>Unavailable</span></p>
+                        <p><a href="#" class="buy">Buy</a></p>
+                    </div>
+                </div>
+
+                <div class="product">
+                    <a href="#" class="invisible">
+                        <img src="assets/images/ajax-relay.jpg" alt="Ajax Relay With Dry Contact">
+                        <h1>Ajax Relay With Dry Contact</h1>
+                    </a>
+                    <div class="info">
+                        <p class="price"><span>849</span> ₴</p>
+                        <p class="stock unavailable"><span>Unavailable</span></p>
+                        <p><a href="#" class="buy">Buy</a></p>
+                    </div>
+                </div>
+
+                <div class="product">
+                    <a href="#" class="invisible">
+                        <img src="assets/images/ajax-socket.jpg" alt="Ajax Socket">
+                        <h1>Ajax Socket</h1>
+                    </a>
+                    <div class="info">
+                        <p class="price"><span>1199</span> ₴</p>
+                        <p class="stock available"><span>Available</span></p>
+                        <p><a href="#" class="buy">Buy</a></p>
+                    </div>
+                </div>
+
+                <div class="product">
+                    <a href="#" class="invisible">
+                        <img src="assets/images/siterwell-radiator-valve-with-thermostat.jpg" alt="Siterwell Radiator Valve with Thermostat">
+                        <h1>Siterwell Radiator Valve with Thermostat</h1>
+                    </a>
+                    <div class="info">
+                        <p class="price"><span>999</span> ₴</p>
+                        <p class="stock available"><span>Available</span></p>
+                        <p><a href="#" class="buy">Buy</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="flex">
+            <h1><a href="index.html" class="invisible">💡SmartHome <span>– Smart Devices</span></a></h1>
+
+            <p><a href="#">❓About</a></p>
+    
+            <p><a href="#">🔧Service</a></p>
+    
+            <p><a href="#">💛Contact</a></p>
+
+            <input type="text" class="search" placeholder="🔍Search">
+
+            <p class="phone">☎️Phone Support:<br><a href="tel:+380991234555">+380 99 123 45 55</a></p>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,25 @@
+body {
+    background-color: lightgreen;
+}
+
+img {
+    float: left;
+}
+
+.print-only {
+    display: none;
+}
+
+@media print {
+    body {
+        background-color: white;
+    }
+
+    img {
+        float: unset;
+    }
+
+    .print-only {
+        display: unset;
+    }
+}

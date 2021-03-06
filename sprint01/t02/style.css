@@ -1,0 +1,12 @@
+img.gauntlet {
+    width: 100px;
+}
+
+div img {
+    width: 50px;
+}
+
+img.gauntlet:hover ~ div:nth-child(2n) img:nth-child(2n-1),
+img.gauntlet:hover ~ div:nth-child(2n-1) img:nth-child(2n)  {
+    visibility: hidden;
+}

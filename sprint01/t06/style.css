@@ -1,0 +1,79 @@
+* {
+    font-family: "Source Sans Pro";
+}
+
+h1 {
+    color: palevioletred;
+}
+
+h2 {
+    color: gray;
+}
+
+form {
+    text-align: center;
+}
+
+form div {
+    display: flex;
+}
+
+form div input {
+    width: 100%;
+}
+
+form label {
+    padding: 15px;
+    color: darkgray;
+    border: 1px solid darkgray;
+    border-radius: 50px;
+    margin: 40px 20px 0px 20px;
+    display: inline-block;
+    width: 200px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+form input[type='checkbox'] {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+
+form input[type='checkbox']:checked + label {
+    background-color: darkblue;
+    color: white;
+}
+
+form input[type='checkbox']:checked + label:after {
+    content: " \2713";
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="submit"] {
+    font-size: 16px;
+    padding: 15px;
+    margin: 40px 20px 0px 20px;
+}
+
+form input[type="text"],
+form input[type="email"] {
+    border: 0px;
+    border-bottom: 1px solid darkgray;
+}
+
+form input[type="submit"] {
+    background-color: palevioletred;
+    color: white;
+    text-transform: uppercase;
+    border: 1px solid palevioletred;
+    transition: background-color 1s;
+}
+
+form input[type="submit"]:hover {
+    transition: 1s;
+    background-color: darkblue;
+}

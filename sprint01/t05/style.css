@@ -1,0 +1,21 @@
+div.search {
+    display: flex;
+    height: 2em;
+}
+
+div.search input {
+    width: 100%;
+}
+
+div.search * {
+    color: green;
+    padding: 0px 10px;
+}
+
+div.search *:hover {
+    color: red;
+}
+
+h1 {
+    text-align: center;
+}

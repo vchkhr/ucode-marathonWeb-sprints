@@ -1,0 +1,352 @@
+body {
+    margin: 0px;
+    font-family: "PT Sans";
+    font-size: 16px;
+}
+
+input[type='range'] {
+    width: 100%;
+}
+
+div.flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+div.flex input {
+    width: 100%;
+}
+
+a.invisible {
+    color: inherit;
+    text-decoration: none;
+}
+
+header, footer {
+    text-align: center;
+    background-color: rgb(252, 252, 243);
+    padding: 10px;
+}
+
+
+header h1, footer h1 {
+    letter-spacing: 3px;
+    margin: 0px 20px 0px 20px;
+    font-size: 30px;
+    line-height: 40px;
+    color: rgb(216, 120, 3)
+}
+
+header h1 span, footer h1 span {
+    color: darkgrey;
+    letter-spacing: 0px;
+    font-weight: 400;
+}
+
+header p, footer p {
+    margin: 0px 20px 0px 20px;
+    font-size: 25px;
+    line-height: 25px;
+    color: rgb(43, 43, 43);
+}
+
+header p.phone, footer p.phone {
+    font-size: 12.5px;
+    line-height: 12.5px;
+}
+
+header p.phone a, footer p.phone a {
+    text-decoration: none;
+}
+
+header p a, footer p a {
+    color: inherit;
+    text-decoration: none;
+}
+
+header p a:hover, footer p a:hover {
+    text-decoration: underline;
+}
+
+header input, footer input {
+    margin: 0px 20px 0px 20px;
+    font-size: 16px;
+    padding: 8px;
+    border: 0px;
+    border-bottom: 1px solid darkorange;
+    width: 100%;
+    max-width: 200px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+main {
+    margin: 0px 20px 20px 20px;
+}
+
+main div.breadcrumbs p span {
+    background-color: rgb(250, 250, 189);
+    padding: 3px;
+    border: 1px solid rgb(255, 255, 0);
+    border-radius: 10px;
+}
+
+main div.breadcrumbs p span a {
+    color: inherit;
+    text-decoration: none;
+}
+
+main div.breadcrumbs p span:hover {
+    background-color: darkorange;
+    border: 1px solid darkorange;
+    color: white;
+}
+
+main h1 {
+    text-align: center;
+}
+
+form.filter {
+    text-align: center;
+}
+
+form.filter label {
+    padding: 6px 16px;
+    color: black;
+    border: 1px solid darkorange;
+    border-radius: 50px;
+    margin: 10px 10px 0px 10px;
+    display: inline-block;
+    font-size: 16px;
+}
+
+form.filter input[type='checkbox'] {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+
+form.filter input[type='checkbox']:checked + label {
+    background-color: darkorange;
+    color: white;
+}
+
+form.filter input[type='checkbox']:checked + label:before {
+    content: "\2713  ";
+}
+
+form.sub-filter {
+    width: 100%;
+    max-width: 300px;
+    margin-right: 10px;
+}
+
+form.sub-filter fieldset {
+    border: 1px solid darkorange;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+div.sub-filters-and-products {
+    display: flex;
+}
+
+div.products {
+    display: flex;
+    flex-flow: row wrap;
+    margin-top: 12px;
+    width: 100%;
+}
+
+div.product {
+    max-width: 200px;
+    border: 1px solid darkorange;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 20px 10px 0px 10px;
+    position: relative;
+}
+
+div.product img {
+    width: 100%;
+}
+
+div.product h1 {
+    font-size: 20px;
+    margin-bottom: 100px;
+}
+
+div.product div.info {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: calc(100% - 2 * 10px);
+    padding: 10px;
+}
+
+div.info p.price {
+    font-family: "PT Mono", monospace;
+    float: left;
+}
+
+div.info p.price span {
+    font-size: 22px;
+}
+
+div.info p.stock {
+    float: right;
+}
+
+div.info p.stock.available span {
+    color: green;
+}
+
+div.info p.stock.available span:before {
+    content: "\2713 ";
+}
+
+div.info p.stock.unavailable span {
+    color: red;
+}
+
+div.info p.stock.unavailable span:before {
+    content: "\2717  ";
+}
+
+div.info a.buy {
+    background-color: darkorange;
+    color: white;
+    font-weight: 900;
+    text-decoration: none;
+    display: inline-block;
+    width: calc(100% - 2 * 10px);
+    text-align: center;
+    padding: 10px;
+    text-transform: uppercase;
+    border-radius: 10px;
+}
+
+div.product div.info p.stock.unavailable ~ a.buy {
+    background-color: darkgray;
+}
+
+@media only screen and (max-width: 1350px) {
+    header h1 span, header input.search, header p.phone {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    form.sub-filter {
+        max-width: 200px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    header h1 span, header input.search, header p {
+        display: none;
+    }
+
+    main form.filter label {
+        display: block;
+        margin-left: -10px;
+        margin-right: -10px;
+    }
+
+    div.sub-filters-and-products {
+        display: inline-block;
+        margin-left: -10px;
+        margin-right: -10px;
+    }
+
+    form.sub-filter {
+        width: 100%;
+        max-width: unset;
+    }
+
+    div.products {
+        display: inline-block;
+        margin-left: -10px;
+        margin-right: -10px;
+    }
+
+    div.products div.product {
+        max-width: unset;
+    }
+}
+
+div.product-page {
+    width: 100%;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div.product-page img.product-image {
+    width: 100%;
+    max-width: 500px;
+}
+
+div.product-page h3 {
+    margin-top: 50px;
+}
+
+div.product-page div.product-info {
+    display: flex;
+}
+
+div.product-page table.description td {
+    padding-right: 50px;
+}
+
+div.product-page div.reviews {
+    margin-top: 50px;
+}
+
+div.product-page div.review {
+    display: flex;
+    align-items: center;
+    border: 1px solid darkorange;
+    border-radius: 10px;
+    padding: 5px 10px;
+    margin-top: 10px;
+}
+
+div.product-page div.review p {
+    margin: 5px;
+}
+
+div.product-page div.review div.profile-photo img {
+    width: 50px;
+    border-radius: 25px;
+    margin-right: 10px;
+}
+
+div.product-page div.review p.info {
+    font-style: italic;
+    color: rgb(107, 107, 107);
+}
+
+@media only screen and (max-width: 1024px) {
+    div.product-page div.product-info {
+        display: inline-block;
+        width: 100%;
+    }
+
+    div.product-page div.product-info img {
+        max-width: none;
+    }
+
+    div.product-page div.product-info table.description {
+        width: 100%;
+    }
+
+    div.product-page div.product-info table.description tr td:nth-child(2) {
+        padding-right: 0px;
+    }
+}
+
+footer {
+    margin: 100px 0px 0px 0px;
+}
