@@ -1,6 +1,6 @@
 body {
     margin: 0px;
-    font-family: "PT Sans";
+    font-family: "PT Sans", sans-serif;
     font-size: 16px;
 }
 
@@ -80,6 +80,10 @@ header input.nav-item.search, footer input.nav-item.search {
     background-color: rgba(0, 0, 0, 0);
 }
 
+header input.nav-item.search::placeholder, footer input.nav-item.search::placeholder {
+    font-family: "PT Sans", sans-serif;
+}
+
 main {
     margin: 0px 20px 20px 20px;
 }
@@ -106,11 +110,11 @@ main h1.page-title {
     text-align: center;
 }
 
-main form.filter {
+main form.active-filters {
     text-align: center;
 }
 
-main form.filter label {
+main form.active-filters label {
     padding: 6px 16px;
     color: black;
     border: 1px solid darkorange;
@@ -120,38 +124,38 @@ main form.filter label {
     font-size: 16px;
 }
 
-main form.filter input[type='checkbox'] {
+main form.active-filters input[type='checkbox'] {
     position: absolute;
     z-index: -1;
     opacity: 0;
 }
 
-main form.filter input[type='checkbox']:checked + label {
+main form.active-filters input[type='checkbox']:checked + label {
     background-color: darkorange;
     color: white;
 }
 
-main form.filter input[type='checkbox']:checked + label:before {
+main form.active-filters input[type='checkbox']:checked + label:before {
     content: "\2713  ";
 }
 
-div.sub-filters-and-products {
+div.filters-and-products {
     display: flex;
 }
 
-main form.sub-filter {
+main form.filters {
     width: 100%;
     max-width: 300px;
     margin-right: 10px;
 }
 
-main form.sub-filter fieldset {
+main form.filters fieldset {
     border: 1px solid darkorange;
     border-radius: 10px;
     margin-top: 20px;
 }
 
-main form.sub-filter p.range-min-max {
+main form.filters p.range-min-max {
     display: flex;
     justify-content: space-between;
     margin: 0px;
@@ -258,7 +262,7 @@ main div.product-page div.product-info div.info p.stock.unavailable ~ p.buy a {
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
-    main div.sub-filters-and-products form.sub-filter {
+    main div.filters-and-products form.filters {
         max-width: 200px;
     }
 }
@@ -273,30 +277,30 @@ main div.product-page div.product-info div.info p.stock.unavailable ~ p.buy a {
         display: none;
     }
 
-    main form.filter label {
+    main form.active-filters label {
         display: block;
         margin-left: -10px;
         margin-right: -10px;
     }
 
-    main div.sub-filters-and-products {
+    main div.filters-and-products {
         display: inline-block;
         margin-left: -10px;
         margin-right: -10px;
     }
 
-    main div.sub-filters-and-products form.sub-filter {
+    main div.filters-and-products form.filters {
         width: 100%;
         max-width: unset;
     }
 
-    main div.sub-filters-and-products div.products {
+    main div.filters-and-products div.products {
         display: inline-block;
         margin-left: -10px;
         margin-right: -10px;
     }
 
-    main div.sub-filters-and-products div.products div.product {
+    main div.filters-and-products div.products div.product {
         max-width: unset;
     }
 }

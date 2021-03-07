@@ -35,25 +35,22 @@
 
         <h1 class="page-title">📕 Catalog</h1>
 
-        <form class="filter">
-            <input type="checkbox" id="security" checked="checked">
-            <label for="security" name="filter">Security</label>
+        <form class="active-filters">
+            <input type="checkbox" id="brand-xiaomi" checked="checked">
+            <label for="brand-xiaomi" name="filter">Brand: Xiaomi</label>
 
-            <input type="checkbox" id="environment-monitoring" checked="checked">
-            <label for="environment-monitoring" name="filter">Environmental Monitoring</label>
+            <input type="checkbox" id="brand-ajax" checked="checked">
+            <label for="brand-ajax" name="filter">Brand: AJAX</label>
 
-            <input type="checkbox" id="smart-home-control" checked="checked">
-            <label for="smart-home-control" name="filter">Smart Home Control</label>
+            <input type="checkbox" id="brand-siterwell" checked="checked">
+            <label for="brand-siterwell" name="filter">Brand: Siterwell</label>
 
-            <input type="checkbox" id="power-grid-management" checked="checked">
-            <label for="power-grid-management" name="filter">Power Grid Management</label>
-
-            <input type="checkbox" id="heating-control" checked="checked">
-            <label for="heating-control" name="filter">Heating Control</label>
+            <input type="checkbox" id="max-price" checked="checked">
+            <label for="max-price" name="filter">Max Price: 1199 ₴</label>
         </form>
 
-        <div class="sub-filters-and-products">
-            <form class="sub-filter">
+        <div class="filters-and-products">
+            <form class="filters">
                 <fieldset class="brand">
                     <legend>⚙️Brand</legend>
     
@@ -72,7 +69,7 @@
                 <fieldset class="max-price">
                     <legend>💸Maximum Price</legend>
     
-                    <input type="range" id="max-price" min="399" max="1199" step="100">
+                    <input type="range" id="max-price" min="399" max="1199" step="100" value="1199">
 
                     <p class="range-min-max">
                         <span class="min">399 ₴</span>
@@ -178,7 +175,7 @@
             <p class="nav-item phone">☎️Phone Support:<br><a href="tel:+380991234555" class="phone-number">+380 99 123 45 55</a></p>
         </nav>
 
-        <p class="copy">&copy; <a href="https://vchkhr.com" class="invisible-link">vchkhr.com</a>, 2021. All Rights Reserved</p>
+        <p class="copy">&copy; <a href="https://vchkhr.com" class="invisible-link">SmartHome</a>, 2021. All Rights Reserved</p>
     </footer>
 </body>
 
