@@ -1,0 +1,309 @@
+h1 {
+    text-align: center;
+    color: rgb(54, 54, 54);
+}
+
+div.settings {
+    background-color: rgb(55, 61, 60);
+    position: relative;
+    width: 1000px;
+    height: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+}
+
+div.settings div.setting {
+    background-color: rgb(113, 124, 139);
+    position: absolute;
+    width: 878px;
+    height: 478px;
+    margin: 10px 0px 10px 10px;
+    border: 1px solid rgb(154, 168, 187);
+    display: flex;
+}
+
+div.settings div.setting div.half {
+    width: 50%;
+}
+
+form {
+    font-family: "Verdana";
+    color: rgb(230, 230, 230);
+}
+
+form fieldset {
+    border: 0px solid black;
+    margin: 50px 20px;
+}
+
+form select {
+    background-color: rgb(44, 45, 48);
+    font-family: "Verdana";
+    padding: 10px;
+    color: white;
+    width: 75%;
+    border: 1px solid rgb(154, 168, 187);
+    border-radius: 2.5px;
+}
+
+form label {
+    font-size: 1em;
+}
+
+div.checker-list {
+    display: flex;
+}
+
+div.checker-list > label.checker {
+    margin: 0 8px;
+    display: block;
+    position: relative;
+    cursor: pointer;
+    user-select: none;
+    padding-left: 25px;
+}
+
+div.checker-list > label.checker:first-child {
+    margin-left: 0;
+}
+
+div.checker-list > label.checker:last-child {
+    margin-right: 0;
+}
+
+div.checker-list > label.checker input {
+    position: absolute;
+    cursor: pointer;
+    opacity: 0;
+    height: 0;
+    width: 0;
+}
+
+div.checker-list > label.checker span {
+    display: flex;
+    box-sizing: border-box;
+    background-color: rgb(44, 45, 48);
+    border: 1px solid rgb(154, 168, 187);
+    border-radius: 2.5px;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    left: 0;
+    top: 0;
+}
+
+div.checker-list > label.checker span:after {
+    content: "\2713";
+    position: absolute;
+    color: rgb(29, 214, 29);
+    display: none;
+}
+
+div.checker-list > label.checker input:checked ~ span:after {
+    display: block;
+}
+
+form input[type=range] {
+    -webkit-appearance: none;
+    width: 75%;
+    background: transparent;
+}
+
+form input[type=range]:focus {
+    outline: none;
+}
+
+form input[type=range]::-ms-track {
+    width: 75%;
+    cursor: pointer;
+
+    background: transparent; 
+    border-color: transparent;
+    color: transparent;
+}
+
+form input[type='range']::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    background: rgb(29, 214, 29);
+    margin-top: -8px;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+    width: 75%;
+    height: 2px;
+    background: rgb(44, 45, 48);
+}
+
+form fieldset p.min-max {
+    width: 75%;
+    margin-top: 10px;
+}
+
+form fieldset p.min-max span.min {
+    float: left;
+}
+
+form fieldset p.min-max span.max {
+    float: right;
+    font-size: 1.5em;
+}
+
+fieldset.dark-ui {
+    display: flex;
+    justify-content: space-between;
+    width: 85%;
+}
+
+fieldset.dark-ui p {
+    margin-top: 10px;
+}
+
+fieldset.dark-ui .switch {
+    position: relative;
+    width: 60px;
+    height: 34px;
+}
+
+fieldset.dark-ui .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+fieldset.dark-ui .slider {
+    position: absolute;
+    top: 0px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgb(44, 45, 48);
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+
+fieldset.dark-ui .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: rgb(29, 214, 29);
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+
+fieldset.dark-ui input:checked + .slider {
+    background-color: rgb(14, 14, 190);
+}
+
+fieldset.dark-ui input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+fieldset.dark-ui .slider.round {
+    border-radius: 34px;
+}
+
+fieldset.dark-ui .slider.round:before {
+    border-radius: 50%;
+}
+
+fieldset.color {
+    display: flex;
+}
+
+fieldset.color > label.checker {
+    margin: 0 8px;
+    display: block;
+    position: relative;
+    cursor: pointer;
+    user-select: none;
+    padding-left: 25px;
+}
+
+fieldset.color > label.checker:first-child {
+    margin-left: 0;
+}
+
+fieldset.color > label.checker:last-child {
+    margin-right: 0;
+}
+
+fieldset.color > label.checker input {
+    position: absolute;
+    cursor: pointer;
+    opacity: 0;
+    height: 0;
+    width: 0;
+}
+
+fieldset.color > label.checker span {
+    display: flex;
+    box-sizing: border-box;
+    background-color: #2f383f;
+    border: 1px solid #767778;
+    justify-content: center;
+    border-radius: 2.5px;
+    align-items: center;
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    left: 0;
+    top: 0;
+}
+
+fieldset.color > label.checker span:after {
+    content: "\2713";
+    position: absolute;
+    color: color;
+    display: none;
+}
+
+fieldset.color > label.checker input:checked ~ span:after {
+    display: block;
+}
+
+fieldset.color label.checker.blue span {
+    background-color: rgb(14, 14, 190);
+}
+
+fieldset.color label.checker.green span {
+    background-color: rgb(29, 214, 29);
+}
+
+fieldset.color label.checker.pink span {
+    background-color: rgb(209, 142, 154);
+}
+
+fieldset.color label.checker.yellow span {
+    background-color: rgb(219, 219, 79);
+}
+
+fieldset.color label.checker.orange span {
+    background-color: rgb(223, 154, 27);
+}
+
+div.side {
+    position: absolute;
+    top: 100px;
+    right: 20px;
+    width: 90px;
+    background-color: rgb(29, 29, 29);
+    text-align: right;
+    border-radius: 0px 25px 25px 0px;
+}
+
+div.side img {
+    padding: 10px 15px;
+    width: 50px;
+}

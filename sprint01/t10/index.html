@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Settings</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+    <h1>Settings</h1>
+
+    <div class="settings">
+        <div class="setting">
+            <div class="half">
+                <form>
+                    <fieldset class="typeface">
+                        <legend>Typeface</legend>
+    
+                        <select name="typeface">
+                            <option>Acunim Pro</option>
+                            <option>Comic Sans</option>
+                            <option disabled>Times New Roman</option>
+                        </select>
+                    </fieldset>
+
+                    <fieldset class="weight">
+                        <legend>Weight</legend>
+    
+                        <div class="checker-list">
+                            <label class="checker">
+                                Regular
+                                <input type="radio" name="weight" id="regular" checked>
+                                <span></span>
+                            </label>
+                            <label class="checker">
+                                Bold
+                                <input type="radio" name="weight" id="bold">
+                                <span></span>
+                            </label>
+                        </div>
+                    </fieldset>
+
+                    <fieldset class="size">
+                        <legend>Size</legend>
+
+                        <input type="range" min="9" max="16" step="1" id="size">
+
+                        <p class="min-max">
+                            <span class="min">A</span>
+                            <span class="max">A</span>
+                        </p>
+                    </fieldset>
+                </form>
+            </div>
+            <div class="half">
+                <form>
+                    <fieldset class="dark-ui">
+                        <p>Dark UI</p>
+                        
+                        <label class="switch">
+                            <input type="checkbox" checked>
+                            <span class="slider round"></span>
+                          </label>
+                    </fieldset>
+
+                    <fieldset class="color">
+                        <legend>Color</legend>
+
+                        <label class="checker blue">
+                            <input type="checkbox" name="color" id="blue" >
+                            <span></span>
+                        </label>
+                        <label class="checker green">
+                            <input type="checkbox" name="color" id="green" checked>
+                            <span></span>
+                        </label>
+                        <label class="checker pink">
+                            <input type="checkbox" name="color" id="pink" >
+                            <span></span>
+                        </label>
+                        <label class="checker yellow">
+                            <input type="checkbox" name="color" id="yellow" >
+                            <span></span>
+                        </label>
+                        <label class="checker orange">
+                            <input type="checkbox" name="color" id="orange" checked>
+                            <span></span>
+                        </label>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+
+        <div class="side">
+            <img src="assets/images/artistic-brush.png">
+            <img src="assets/images/user-icon.png">
+            <img src="assets/images/sms-speech-bubble.png">
+            <img src="assets/images/computer-screen.png">
+        </div>
+    </div>    
+</body>
+
+</html>

@@ -151,6 +151,12 @@ main form.sub-filter fieldset {
     margin-top: 20px;
 }
 
+main form.sub-filter p.range-min-max {
+    display: flex;
+    justify-content: space-between;
+    margin: 0px;
+}
+
 main div.products {
     display: flex;
     flex-flow: row wrap;

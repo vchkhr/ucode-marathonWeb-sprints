@@ -1,0 +1,23 @@
+div {
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    border-radius: 50%;
+    position: relative;
+    animation: 5s linear anim infinite alternate;
+}
+
+div:hover {
+    background-color: red;
+    transition: 2s;
+}
+
+@keyframes anim {
+    from {
+        left: 0;
+    }
+
+    to {
+        left: calc(100% - 100px);
+    }
+  }
