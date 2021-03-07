@@ -8,17 +8,17 @@ input[type='range'] {
     width: 100%;
 }
 
-div.flex {
+.flex {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-div.flex input {
+.flex input {
     width: 100%;
 }
 
-a.invisible {
+a.invisible-link {
     color: inherit;
     text-decoration: none;
 }
@@ -29,8 +29,7 @@ header, footer {
     padding: 10px;
 }
 
-
-header h1, footer h1 {
+header h1.store-name, footer h1.store-name {
     letter-spacing: 3px;
     margin: 0px 20px 0px 20px;
     font-size: 30px;
@@ -38,38 +37,38 @@ header h1, footer h1 {
     color: rgb(216, 120, 3)
 }
 
-header h1 span, footer h1 span {
+header h1.store-name span.store-slogan, footer h1.store-name span.store-slogan {
     color: darkgrey;
     letter-spacing: 0px;
     font-weight: 400;
 }
 
-header p, footer p {
+header p.nav-item, footer p.nav-item {
     margin: 0px 20px 0px 20px;
-    font-size: 25px;
+    font-size: 20px;
     line-height: 25px;
     color: rgb(43, 43, 43);
 }
 
-header p.phone, footer p.phone {
+header p.nav-item.phone, footer p.nav-item.phone {
     font-size: 12.5px;
     line-height: 12.5px;
 }
 
-header p.phone a, footer p.phone a {
+header p.nav-item.phone a.phone-number, footer p.nav-item.phone a.phone-number {
     text-decoration: none;
 }
 
-header p a, footer p a {
+header p.nav-item a, footer p.nav-item a {
     color: inherit;
     text-decoration: none;
 }
 
-header p a:hover, footer p a:hover {
-    text-decoration: underline;
+header p.nav-item a:hover, footer p.nav-item a:hover {
+    text-decoration: none;
 }
 
-header input, footer input {
+header input.nav-item.search, footer input.nav-item.search {
     margin: 0px 20px 0px 20px;
     font-size: 16px;
     padding: 8px;
@@ -85,33 +84,33 @@ main {
     margin: 0px 20px 20px 20px;
 }
 
-main div.breadcrumbs p span {
+main div.breadcrumbs p span.breadcrumb {
     background-color: rgb(250, 250, 189);
     padding: 3px;
     border: 1px solid rgb(255, 255, 0);
     border-radius: 10px;
 }
 
-main div.breadcrumbs p span a {
+main div.breadcrumbs p span.breadcrumb a {
     color: inherit;
     text-decoration: none;
 }
 
-main div.breadcrumbs p span:hover {
+main div.breadcrumbs p span.breadcrumb:hover {
     background-color: darkorange;
     border: 1px solid darkorange;
     color: white;
 }
 
-main h1 {
+main h1.page-title {
     text-align: center;
 }
 
-form.filter {
+main form.filter {
     text-align: center;
 }
 
-form.filter label {
+main form.filter label {
     padding: 6px 16px;
     color: black;
     border: 1px solid darkorange;
@@ -121,45 +120,45 @@ form.filter label {
     font-size: 16px;
 }
 
-form.filter input[type='checkbox'] {
+main form.filter input[type='checkbox'] {
     position: absolute;
     z-index: -1;
     opacity: 0;
 }
 
-form.filter input[type='checkbox']:checked + label {
+main form.filter input[type='checkbox']:checked + label {
     background-color: darkorange;
     color: white;
 }
 
-form.filter input[type='checkbox']:checked + label:before {
+main form.filter input[type='checkbox']:checked + label:before {
     content: "\2713  ";
-}
-
-form.sub-filter {
-    width: 100%;
-    max-width: 300px;
-    margin-right: 10px;
-}
-
-form.sub-filter fieldset {
-    border: 1px solid darkorange;
-    border-radius: 10px;
-    margin-top: 20px;
 }
 
 div.sub-filters-and-products {
     display: flex;
 }
 
-div.products {
+main form.sub-filter {
+    width: 100%;
+    max-width: 300px;
+    margin-right: 10px;
+}
+
+main form.sub-filter fieldset {
+    border: 1px solid darkorange;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+main div.products {
     display: flex;
     flex-flow: row wrap;
     margin-top: 12px;
     width: 100%;
 }
 
-div.product {
+main div.products div.product {
     max-width: 200px;
     border: 1px solid darkorange;
     border-radius: 10px;
@@ -168,53 +167,62 @@ div.product {
     position: relative;
 }
 
-div.product img {
+main div.products div.product img.product-image {
     width: 100%;
 }
 
-div.product h1 {
+main div.products div.product h1.product-name {
     font-size: 20px;
-    margin-bottom: 100px;
+    margin-bottom: 110px;
+    text-align: center;
 }
 
-div.product div.info {
+main div.products div.product div.info {
     position: absolute;
     bottom: 0px;
     left: 0px;
     width: calc(100% - 2 * 10px);
-    padding: 10px;
+    padding: 0px 10px;
 }
 
-div.info p.price {
+main div.products div.product div.info p.price,
+main div.product-page div.product-info div.info p.price {
     font-family: "PT Mono", monospace;
     float: left;
 }
 
-div.info p.price span {
+main div.products div.product div.info p.price span.price,
+main div.product-page div.product-info div.info p.price span.price {
     font-size: 22px;
 }
 
-div.info p.stock {
+main div.products div.product div.info p.stock,
+main div.product-page div.product-info div.info p.stock {
     float: right;
 }
 
-div.info p.stock.available span {
+main div.products div.product div.info p.stock.available,
+main div.product-page div.product-info div.info p.stock.available {
     color: green;
 }
 
-div.info p.stock.available span:before {
+main div.products div.product div.info p.stock.available:before,
+main div.product-page div.product-info div.info p.stock.available:before {
     content: "\2713 ";
 }
 
-div.info p.stock.unavailable span {
+main div.products div.product div.info p.stock.unavailable,
+main div.product-page div.product-info div.info p.stock.unavailable {
     color: red;
 }
 
-div.info p.stock.unavailable span:before {
+main div.products div.product div.info p.stock.unavailable:before,
+main div.product-page div.product-info div.info p.stock.unavailable:before {
     content: "\2717  ";
 }
 
-div.info a.buy {
+main div.products div.product div.info p.buy a,
+main div.product-page div.product-info div.info p.buy a {
     background-color: darkorange;
     color: white;
     font-weight: 900;
@@ -227,24 +235,35 @@ div.info a.buy {
     border-radius: 10px;
 }
 
-div.product div.info p.stock.unavailable ~ a.buy {
+main div.products div.product div.info p.stock.unavailable ~ p.buy a,
+main div.product-page div.product-info div.info p.stock.unavailable ~ p.buy a {
     background-color: darkgray;
 }
 
 @media only screen and (max-width: 1350px) {
-    header h1 span, header input.search, header p.phone {
+    header nav h1.store-name span.store-slogan,
+    header nav input.search,
+    header nav p.phone,
+    footer nav h1.store-name span.store-slogan,
+    footer nav input.search,
+    footer nav p.phone {
         display: none;
     }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
-    form.sub-filter {
+    main div.sub-filters-and-products form.sub-filter {
         max-width: 200px;
     }
 }
 
 @media only screen and (max-width: 768px) {
-    header h1 span, header input.search, header p {
+    header nav h1.store-name span.store-slogan,
+    header nav input.search,
+    header nav p.nav-item,
+    footer nav h1.store-name span.store-slogan,
+    footer nav input.search,
+    footer nav p.nav-item {
         display: none;
     }
 
@@ -254,57 +273,57 @@ div.product div.info p.stock.unavailable ~ a.buy {
         margin-right: -10px;
     }
 
-    div.sub-filters-and-products {
+    main div.sub-filters-and-products {
         display: inline-block;
         margin-left: -10px;
         margin-right: -10px;
     }
 
-    form.sub-filter {
+    main div.sub-filters-and-products form.sub-filter {
         width: 100%;
         max-width: unset;
     }
 
-    div.products {
+    main div.sub-filters-and-products div.products {
         display: inline-block;
         margin-left: -10px;
         margin-right: -10px;
     }
 
-    div.products div.product {
+    main div.sub-filters-and-products div.products div.product {
         max-width: unset;
     }
 }
 
-div.product-page {
+main div.product-page {
     width: 100%;
     max-width: 1000px;
     margin-left: auto;
     margin-right: auto;
 }
 
-div.product-page img.product-image {
+main div.product-page div.product-info {
+    display: flex;
+}
+
+main div.product-page div.product-info img.product-image {
     width: 100%;
     max-width: 500px;
 }
 
-div.product-page h3 {
+main div.product-page div.product-info h3 {
     margin-top: 50px;
 }
 
-div.product-page div.product-info {
-    display: flex;
-}
-
-div.product-page table.description td {
+main div.product-page div.product-info table.description td {
     padding-right: 50px;
 }
 
-div.product-page div.reviews {
+main div.product-page div.reviews {
     margin-top: 50px;
 }
 
-div.product-page div.review {
+main div.product-page div.reviews div.review {
     display: flex;
     align-items: center;
     border: 1px solid darkorange;
@@ -313,40 +332,70 @@ div.product-page div.review {
     margin-top: 10px;
 }
 
-div.product-page div.review p {
+main div.product-page div.reviews div.review p {
     margin: 5px;
 }
 
-div.product-page div.review div.profile-photo img {
+main div.product-page div.reviews div.review div.profile-photo img {
     width: 50px;
     border-radius: 25px;
     margin-right: 10px;
 }
 
-div.product-page div.review p.info {
+main div.product-page div.reviews div.review p.info {
     font-style: italic;
     color: rgb(107, 107, 107);
 }
 
 @media only screen and (max-width: 1024px) {
-    div.product-page div.product-info {
+    main div.product-page div.product-info {
         display: inline-block;
         width: 100%;
     }
 
-    div.product-page div.product-info img {
+    main div.product-page div.product-info img.product-image {
         max-width: none;
     }
 
-    div.product-page div.product-info table.description {
+    main div.product-page div.product-info table.description {
         width: 100%;
     }
 
-    div.product-page div.product-info table.description tr td:nth-child(2) {
+    main div.product-page div.product-info table.description tr td:nth-child(2) {
         padding-right: 0px;
     }
 }
 
+main div.pagination {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+main div.pagination p.page {
+    border: 1px solid darkorange;
+    border-radius: 10px;
+    color: darkorange;
+    padding: 10px 20px;
+    margin: 5px 5px;
+}
+
+main div.pagination p.page.current {
+    background-color: darkorange;
+    color: white;
+}
+
+main div.pagination a {
+    color: inherit;
+    text-decoration: none;
+}
+
 footer {
     margin: 100px 0px 0px 0px;
+}
+
+footer p.copy {
+    font-size: 11px;
 }
