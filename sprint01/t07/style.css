@@ -52,7 +52,7 @@ header p.nav-item, footer p.nav-item {
 
 header p.nav-item.phone, footer p.nav-item.phone {
     font-size: 12.5px;
-    line-height: 12.5px;
+    line-height: 14px;
 }
 
 header p.nav-item.phone a.phone-number, footer p.nav-item.phone a.phone-number {
