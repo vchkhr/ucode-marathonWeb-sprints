@@ -1,0 +1,100 @@
+body {
+    font-family: 'PT Sans', sans-serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+input[type='button'] {
+    width: calc(100% - 2 * 10px);
+}
+
+.hidden {
+    display: none !important;
+}
+
+input[type='text'],
+input[type='number'],
+select {
+    font-family: 'PT Sans', sans-serif;
+    text-align: center;
+    padding: 5px;
+    border-radius: 10px;
+    border: 1px solid rgba(4, 0, 255, 0.527);
+}
+
+input[type='button'] {
+    font-family: 'PT Sans', sans-serif;
+    text-align: center;
+    padding: 5px;
+    margin: 0px 10px;
+    border-radius: 10px;
+    background-color: rgba(255, 217, 0, 0.288);
+    border: 1px solid rgba(255, 217, 0, 0.527);
+}
+
+div.flex-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: -10px;
+    margin-right: -10px;
+}
+
+div.flex-container div.flex-item {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+main {
+    width: 100%;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+main div#person-image {
+    text-align: center;
+}
+
+main div#person-image img {
+    width: 100%;
+    max-width: 200px;
+}
+
+main div#person-notification div {
+    text-align: center;
+    padding: 5px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+main div#person-info-edit p {
+    line-height: 30px;
+}
+
+main .sleep-timer {
+    background-color: rgba(212, 0, 255, 0.288);
+    border: 1px solid rgba(212, 0, 255, 0.623);
+}
+
+main .sleep-awake,
+main .eat,
+main .eat-true {
+    background-color: rgba(0, 255, 21, 0.288);
+    border: 1px solid rgba(0, 255, 34, 0.623);
+}
+
+main .eat-still,
+main .fly {
+    background-color: rgba(255, 251, 0, 0.288);
+    border: 1px solid rgba(255, 238, 0, 0.623);
+}
+
+main .eat-false,
+main .hungry,
+main .fight-with-evil {
+    background-color: rgba(255, 0, 0, 0.288);
+    border: 1px solid rgba(255, 0, 0, 0.623);
+}

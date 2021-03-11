@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Upgrade Human</title>
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>Upgrade Human</h1>
+    </header>
+
+    <main>
+        <div id="person-image" class="hidden">
+            <div class="stand hidden">
+                <img src="assets/images/man.png" alt="Human" class="male hidden">
+                <img src="assets/images/woman.png" alt="Human" class="female hidden">
+            </div>
+            <div class="hero hidden">
+                <img src="assets/images/green-lantern.png" alt="Hero">
+            </div>
+        </div>
+
+        <div id="person-notification">
+            <div class="sleep-timer hidden">
+                <p>I'm sleeping for <span></span> s...</p>
+            </div>
+            <div class="sleep-awake hidden">
+                <p>I'm awake now</p>
+            </div>
+            <div class="eat-true hidden">
+                <p>Nom nom nom</p>
+            </div>
+            <div class="eat-still hidden">
+                <p>I'm still hungry</p>
+            </div>
+            <div class="eat-false hidden">
+                <p>I'm not hungry</p>
+            </div>
+            <div class="hungry hidden">
+                <p>I'm hungry</p>
+            </div>
+            <div class="fly hidden">
+                <p>I'm flying!</p>
+            </div>
+            <div class="fight-with-evil hidden">
+                <p>Khhhh-chhh... Bang-g-g-g-g... Evil is defeated!</p>
+            </div>
+        </div>
+
+        <div id="person-info-edit" class="flex-container">
+            <div class="flex-item">
+                <p>First Name:</p>
+                <p>Last Name:</p>
+                <p>Gender:</p>
+                <p>Age:</p>
+            </div>
+            <div class="flex-item">
+                <p id="first-name"><input type="text" id="first-name" value="James"></p>
+                <p id="last-name"><input type="text" id="last-name" value="Kotlin"></p>
+                <p id="gender">
+                    <select id="gender">
+                        <option value="male" selected>Male</option>
+                        <option value="female">Female</option>
+                    </select>
+                </p>
+                <p id="age"><input type="number" min="1" max="99" step="1" id="age" value="25"></p>
+            </div>
+        </div>
+
+        <div class="flex-container">
+            <div class="flex-item">
+                <input type="button" id="info-edit" value="EDIT" class="hidden">
+                <input type="button" id="info-save" value="SAVE">
+            </div>
+        </div>
+
+        <div id="person-info-display" class="flex-container hidden">
+            <div class="flex-item">
+                <p>First Name:</p>
+                <p>Last Name:</p>
+                <p>Gender:</p>
+                <p>Age:</p>
+                <p>Calories:</p>
+                <p class="hero hidden">Lantern Energy:</p>
+            </div>
+            <div class="flex-item">
+                <p id="first-name"></p>
+                <p id="last-name"></p>
+                <p id="gender"></p>
+                <p id="age"></p>
+                <p id="calories"></p>
+                <p class="hero hidden" id="lantern-energy"></p>
+            </div>
+        </div>
+
+        <div id="person-buttons" class="flex-container hidden">
+            <div class="flex-item">
+                <p>
+                    <input type="button" id="sleep" class="sleep-timer" value="SLEEP">
+                </p>
+                <p>
+                    <input type="button" id="eat" class="eat" value="EAT">
+                </p>
+                <p id="turn-into-superhero">
+                    <input type="button" id="turn-into-superhero" class="turn-into-superhero" value="TURN INTO SUPERHERO">
+                </p>
+                <p id="fly" class="hidden">
+                    <input type="button" id="fly" class="fly" value="FLY">
+                </p>
+                <p id="fight-with-evil" class="hidden">
+                    <input type="button" id="fight-with-evil" class="fight-with-evil" value="FIGHT WITH EVIL">
+                </p>
+            </div>
+        </div>
+    </main>
+        
+    <script src="js/script.js"></script>
+</body>
+
+</html>
