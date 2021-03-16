@@ -68,6 +68,7 @@ function processWeather(weatherJSON) {
     for (let day of weatherJSON.daily) {
         let date = new Date(day.dt * 1000)
         let months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
+        let daysOfWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
 
         let weatherMain = day.weather[0].main
         let weatherIcon = null
@@ -125,6 +126,6 @@ function processWeather(weatherJSON) {
             temp = `+${temp}`
         }
 
-        days.insertAdjacentHTML("beforeend", `<div class='day'><p class='date'>${months[date.getMonth()]}, <span class="day-of-month">&nbsp;${date.getDate()}</span></p><p class='forecast'>${weatherIcon}</p><p class="temp">${temp}&deg;</p></div>`)
+        days.insertAdjacentHTML("beforeend", `<div class='day'><p class='date'>${months[date.getMonth()]}, <span class="day-of-month">&nbsp;${date.getDate()}</span></p><p class="day-of-week">${daysOfWeek[date.getDay()]}</p><p class='forecast'>${weatherIcon}</p><p class="temp">${temp}&deg;</p></div>`)
     }
 }

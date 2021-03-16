@@ -13,7 +13,7 @@ h1 {
 div.info {
     background: rgb(47, 130, 255);
     border: 1px solid blue;
-    border-radius: 5px;
+    border-radius: 10px;
     padding: 5px 20px;
     color: white;
 }
@@ -31,18 +31,28 @@ div.weather div.days {
 }
 
 div.weather div.days div.day {
-    background: rgb(252, 255, 175);
+    background: linear-gradient(rgb(250, 253, 155), rgb(254, 255, 231));
     border: 1px solid yellow;
-    border-radius: 5px;
+    border-radius: 10px;
     padding: 5px 20px;
     margin: 5px;
     text-align: center;
     width: 100%;
     max-width: 75px;
 }
+div.weather div.days div.day p.date {
+    margin-bottom: 0px;
+}
 
 div.weather div.days div.day p.date span.day-of-month {
     font-size: 20px;
+}
+
+div.weather div.days div.day p.day-of-week {
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-size: 12px;
+    margin-top: 0px;
 }
 
 div.weather div.days div.day p.forecast {
@@ -52,4 +62,5 @@ div.weather div.days div.day p.forecast {
 
 div.weather div.days div.day p.temp {
     font-size: 40px;
+    margin-bottom: 12.5px;
 }
