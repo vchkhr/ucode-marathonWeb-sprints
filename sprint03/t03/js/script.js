@@ -93,7 +93,7 @@ class Human {
 
 class Superhero extends Human {
     constructor(firstName, lastName, age, calories, lanternEnergy = 10) {
-        super(firstName, lastName, 'male', age, calories)
+        super(firstName, lastName, 'Superhero', age, calories)
         this.lanternEnergy = lanternEnergy
     }
 
@@ -169,6 +169,7 @@ document.querySelector('input#turn-into-superhero').addEventListener('click', fu
         document.querySelector('div#person-info-display p.hero').classList.remove('hidden')
         document.querySelector('div#person-info-display p#lantern-energy').classList.remove('hidden')
 
+        document.querySelector('div#person-info-display p#gender').innerHTML = hero.gender
         document.querySelector('div#person-info-display p#lantern-energy').innerHTML = hero.lanternEnergy
         document.querySelector('div#person-buttons p#turn-into-superhero').classList.add('hidden')
         document.querySelector('div#person-buttons p#fly').classList.remove('hidden')

@@ -1,0 +1,43 @@
+div.box {
+    width: 50px;
+    height: 50px;
+    transform: rotate(45deg);
+    cursor: pointer;
+    position: absolute;
+    z-index: 1000;
+    left: 50px;
+    top: 50px;
+}
+
+div#box1 {
+    background-color: rgb(236, 236, 0);
+}
+
+div#box2 {
+    background-color: rgb(10, 133, 10);
+    top: 150px;
+}
+
+div#box3 {
+    background-color: rgb(31, 31, 255);
+    top: 250px;
+}
+
+div#box4 {
+    background-color: rgb(255, 157, 173);
+    top: 350px;
+}
+
+div#box5 {
+    background-color: rgb(240, 88, 240);
+    top: 450px;
+}
+
+div#box6 {
+    background-color: rgb(211, 0, 0);
+    top: 550px;
+}
+
+div.box.unmovable {
+    border: 5px dashed black;
+}

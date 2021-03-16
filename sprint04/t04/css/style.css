@@ -1,0 +1,66 @@
+body {
+    font-family: "PT Sans", sans-serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+div.films {
+    display: flex;
+    margin: 20px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div.films div.nav {
+    width: 200px;
+}
+
+div.films div.nav, div.films div.description {
+    margin: 20px;
+}
+
+div.films div.nav p {
+    margin: 20px 0px;
+    text-align: center;
+}
+
+div.films div.nav p.current {
+    font-weight: bold;
+    border-left: 3px solid darkorange;
+    padding-left: -3px;
+}
+
+div.films div.description {
+    width: 100%;
+}
+
+div.films div.description p, div.films div.description h2 {
+    margin: 15px 5px;
+}
+
+div.films div.description img.poster {
+    float: right;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+div.films div.description div.cast {
+    display: flex;
+    flex-flow: row wrap;
+    margin: -5px;
+}
+
+div.films div.description div.cast p {
+    background: rgb(255, 191, 72);
+    margin: 5px;
+    padding: 5px;
+    width: 80px;
+    border-radius: 5px;
+    text-align: center;
+    vertical-align: middle;
+}

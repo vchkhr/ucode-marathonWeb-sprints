@@ -1,0 +1,23 @@
+.hidden {
+    display: none;
+}
+
+div.slideshow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: gray;
+    color: white;
+}
+
+div.slideshow img {
+    width: calc(100% - 2 * 100px);
+}
+
+div.slideshow img.arrow {
+    width: 100px;
+}
+
+div.slideshow img.arrow.previous {
+    transform: rotate(180deg);
+}
