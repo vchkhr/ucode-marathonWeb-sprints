@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Reset Password</title>
+    <link href="style.css" rel="stylesheet">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <h1>Reset Password</h1>
+
+    <form action="index.php" method="post" id="reset-password" class="small">
+        <p>
+            <input type="text" id="login" name="login" placeholder="Login" autocomplete="username" required>
+        </p>
+        <p class="error hidden" id="login-error"></p>
+
+        <p>
+            <input type="email" id="email" name="email" placeholder="Email" required>
+        </p>
+        <p class="error hidden" id="email-error"></p>
+
+        <p class="center">
+            <input type="submit" name="reset-password" class="button" value="Reset Password" required>
+        </p>
+    </form>
+</body>
+
+</html>

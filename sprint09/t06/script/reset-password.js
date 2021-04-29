@@ -1,0 +1,67 @@
+function fillForm() {
+    document.querySelector("input#login").value = "vchkhr";
+    document.querySelector("input#email").value = "vchkhr@gmail.com";
+}
+
+// fillForm();
+
+function hideErrors() {
+    document.querySelectorAll("p.error").forEach(function(elem) {
+        elem.classList.add("hidden");
+    });
+}
+
+hideErrors();
+
+document.querySelector("form#reset-password").addEventListener("submit", function(event) {
+    hideErrors();
+
+    let login = document.querySelector("input#login").value;
+
+    if (login.length < 6) {
+        let loginError = document.querySelector("p#login-error");
+        
+        loginError.classList.remove("hidden");
+        loginError.innerHTML = "&#x26A0;&#xFE0F; Login should be more than 6 characters";
+
+        event.preventDefault();
+    }
+
+    if (login.length >= 20) {
+        let loginError = document.querySelector("p#login-error");
+
+        loginError.classList.remove("hidden");
+        loginError.innerHTML = "&#x26A0;&#xFE0F; Login should be less than 20 characters";
+
+        event.preventDefault();
+    }
+
+    if (/[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]+/.test(login) || login.includes(" ")) {
+        let loginError = document.querySelector("p#login-error");
+
+        loginError.classList.remove("hidden");
+        loginError.innerHTML = "&#x26A0;&#xFE0F; Login should not contains special characters or space";
+
+        event.preventDefault();
+    }
+
+    let email = document.querySelector("input#email").value;
+
+    if (email.includes(" ") || !email.includes("@")) {
+        let emailError = document.querySelector("p#email-error");
+        
+        emailError.classList.remove("hidden");
+        emailError.innerHTML = "&#x26A0;&#xFE0F; Invalid email";
+
+        event.preventDefault();
+    }
+
+    if (email.length < 3) {
+        let emailError = document.querySelector("p#email-error");
+        
+        emailError.classList.remove("hidden");
+        emailError.innerHTML = "&#x26A0;&#xFE0F; Email should be more than 3 characters.";
+
+        event.preventDefault();
+    }
+});

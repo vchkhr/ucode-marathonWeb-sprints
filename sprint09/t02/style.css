@@ -1,0 +1,80 @@
+body {
+    font-family: 'PT Sans';
+    height: 100%;
+}
+
+.hidden {
+    display: none;
+}
+
+
+h1 {
+    text-align: center;
+}
+
+p,
+input,
+input::placeholder  {
+    font-size: 15px;
+}
+
+div.center {
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+}
+
+p.center {
+    text-align: center;
+}
+
+label {
+    margin-right: 10px;
+}
+
+input {
+    background-color: white;
+    border: 0px;
+    border-bottom: 1px solid gray;
+    padding: 10px;
+    outline: none;
+    width: 100%;
+}
+
+input.button {
+    border: 1px solid green;
+    background-color: rgba(0, 128, 0, 0.068);
+    border-radius: 100px;
+    padding: 10px 30px;
+    width: auto;
+}
+
+input.sign-out {
+    border: 1px solid red;
+    background-color: rgba(128, 0, 0, 0.068);
+    border-radius: 100px;
+}
+
+input.button:hover {
+    background-color: rgba(0, 128, 0, 0.692);
+    color: white;
+}
+
+input.sign-out:hover {
+    background-color: rgba(128, 0, 0, 0.692);
+}
+
+form.small {
+    width: 100%;
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+p.error {
+    color: red;
+}
+
+span.italic {
+    font-style: italic;
+}
