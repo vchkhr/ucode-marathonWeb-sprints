@@ -1,4 +1,4 @@
-# [ucode-marathonWeb-sprints](https://vchkhr.com/ucode-marathonWeb-sprints/index.html)
+# [ucode-marathonWeb-sprints](https://ucode-marathonWeb-sprints.vchkhr.com)
 ucode IT academy | Marathon Web | Sprints 0-9
 
 ## Skills
